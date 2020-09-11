@@ -41,6 +41,7 @@ $(function () {
             type: 'POST',
             data: $(this).serialize(),
             success: function (res) {
+                console.log(res)
                 if (res.status !== 0) {
                     return layer.msg('登录失败')
                 }
